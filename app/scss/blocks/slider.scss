@@ -1,0 +1,44 @@
+.slider {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  width: 280px;
+  @include media($md) {
+    width: 600px;
+  }
+  @include media($lg) {
+    width: 1000px;
+  }
+}
+.slider__item {
+  max-width: 120px;
+  height: 120px;
+  @include media($md) {
+    max-width: 220px;
+    height: 220px;
+  }
+  @include media($lg) {
+    max-width: 320px;
+    height: 320px;
+  }
+}
+.slider__img {
+  border-radius: 22px;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  @include media($md) {
+    width: 190px;
+    height: 220px;
+  }
+  @include media($lg) {
+    width: 320px;
+    height: 320px;
+  }
+}
+// .flex{
+//     display: flex;
+// }
+// .flex__column{
+//     min-width: 0;
+// }

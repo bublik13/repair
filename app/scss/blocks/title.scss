@@ -1,0 +1,7 @@
+.title {
+  @include font(25px, 30px, 600, $second-family);
+  color: $title-color-black;
+  @include media($md) {
+    @include font(30px, 36px, 600, $second-family);
+  }
+}

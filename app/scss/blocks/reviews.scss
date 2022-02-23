@@ -1,0 +1,118 @@
+.reviews {
+  background: #f2f6ff;
+}
+.reviews__container {
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+.reviews__subtitle {
+  @include font(20px, 26px, 400, $second-family);
+  text-align: center;
+  margin-bottom: 38px;
+  @include media($sm) {
+    margin-bottom: 32px;
+  }
+}
+.reviews__row {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  @include media($sm) {
+    flex-direction: row;
+  }
+}
+.reviews__item {
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: transform 0.5s;
+  cursor: pointer;
+}
+.reviews__item:hover {
+  transform: translateY(-20px);
+}
+.reviews__item:first-child {
+    margin-bottom: 34px;
+  @include media($sm) {
+    margin-right: 24px;
+    margin-bottom: 0;
+  }
+}
+.reviews__title {
+  @include font(16px, 20px, 700, $second-family);
+  margin-bottom: 12px;
+}
+.reviews__top {
+  display: flex;
+}
+.reviews__wrap-img {
+  position: relative;
+  border-radius: 50%;
+  margin-right: 16px;
+  margin-bottom: 15px;
+}
+.reviews__img-empty {
+  border-radius: 50%;
+}
+.reviews__img-logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  border: 1px solid #d6d6d6;
+}
+.reviews__wrap-text {
+}
+.reviews__name {
+  @include font(18px, 23px, 600, $second-family);
+  color: #0057ff;
+}
+.reviews__img-estimation {
+}
+.reviews__feedback {
+  margin-bottom: 16px;
+}
+.reviews__wrap-top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 7px;
+}
+.reviews__circle {
+  width: 8px;
+  height: 8px;
+  background-color: #f7a238;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+.reviews__subtitle-two {
+  @include font(16px, 20px, 700, $second-family);
+}
+.reviews__desc {
+  max-width: 490px;
+  @include font(14px, 18px, 400, $plex-sans-family);
+  color: #000;
+}
+.reviews__desc--font {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+}
+.reviews__wrap {
+  margin-bottom: 10px;
+}
+.reviews__pluse {
+  margin-right: 8px;
+  color: #14b910;
+  @include font(20px, 30px, 700, $second-family);
+}
+.reviews__minus {
+  margin-right: 8px;
+  color: #ff0000;
+  @include font(20px, 30px, 700, $second-family);
+}
+.reviews__text {
+  @include font(14px, 18px, 700, $second-family);
+  color: #333333;
+}

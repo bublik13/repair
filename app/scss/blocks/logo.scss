@@ -1,0 +1,8 @@
+.logo {
+}
+.logo__name {
+  text-decoration: none;
+  @include font(24px, 32px, 600, $second-family);
+  color: $logo-color;
+  letter-spacing: -0.02em;
+}

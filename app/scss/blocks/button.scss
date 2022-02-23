@@ -1,0 +1,40 @@
+.button {
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: top;
+  border: none;
+  transition: ease-out 0.2s;
+  text-align: center;
+  text-decoration: none;
+}
+.button--width {
+  max-width: 430px;
+}
+.button--border {
+  border-radius: 12px;
+  border: 2px solid $button-border-black;
+}
+.button__wrap {
+  display: flex;
+  align-items: center;
+  padding: 18px;
+  @include media($md) {
+    padding: 18px 82px;
+  }
+}
+.button__name {
+  @include font(14px, 20px, 600, $second-family);
+  color: $button-color-black;
+  margin-right: 9px;
+  @include media($md) {
+    margin-right: 13px;
+    @include font(16px, 20px, 600, $second-family);
+  }
+}
+.button__img {
+  color: $button-color-black;
+  width: 24px;
+  height: 24px;
+  display: block;
+  cursor: pointer;
+}
