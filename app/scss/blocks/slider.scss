@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   min-width: 0;
-  width: 280px;
+  width: 320px;
   @include media($md) {
     width: 600px;
   }
