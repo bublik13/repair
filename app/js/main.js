@@ -25,3 +25,25 @@ $('.slider').slick({
     ]
   });
 
+
+const body = document.querySelector('.js-body');
+const nav = document.querySelector('.js-form');
+const button = document.querySelector('.js-button');
+const burger = document.querySelector('.js-burger');
+
+button.addEventListener('click', ()=>{  
+  nav.classList.toggle('header__form--active');
+  body.classList.toggle('body--lock');
+});
+burger.addEventListener('click', ()=>{  
+  nav.classList.toggle('header__form--active');
+  body.classList.toggle('body--lock');
+});
+
+
+const $btn = document.querySelector('#my-btn');
+
+$btn.onclick = function() {
+  console.log ('Hello World!');
+}
+

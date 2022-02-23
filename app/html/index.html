@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Repair</title>
+    <title>RERATE</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&family=IBM+Plex+Sans:ital,wght@0,600;1,400&display=swap" rel="stylesheet"> 
@@ -12,13 +12,16 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body>
+<body class="js-body">
     <svg display="none">
         <symbol id="arrow" viewBox="0 0 24 16">
          <path d="M20 9L13 16H16L24 8L16 0H13L20 7H0V9H20Z" fill="currentColor"></path>
        </symbol>
+       <symbol id="phone" viewBox="0 0 16 23">
+        <path d="M10.8678 1.06487L9.0552 0.405143C8.77104 0.301718 8.46083 0.472242 8.39586 0.767576L6.98713 7.172C6.9333 7.41675 7.06896 7.66354 7.30445 7.74925L8.77248 8.28357C12.0614 9.48064 9.19741 15.8875 6.37834 14.8614L4.41429 14.1466C4.19032 14.065 3.93995 14.1529 3.81609 14.3566L0.371361 20.02C0.207394 20.2895 0.33104 20.6417 0.627535 20.7496L3.34334 21.7381C9.18089 23.8628 11.8023 18.9639 14.0254 12.8559C15.9065 7.68763 16.7053 3.18956 10.8678 1.06487Z" fill="currentColor"></path>
+      </symbol>
      </svg>
-    
+        
 
 <header class="header">
     <div class="header__container container">
@@ -42,7 +45,7 @@
             </div>
         </div>
         <p class="header__subtitle subtitle subtitle--width subtitle--mb">Проходя тест вы экономите время нашим менеджерам и мы за это дарим вам подарок!</p>
-        <a class="header__button button button--width button--border" href="#">
+        <a class="header__button button button--width button--border button--active js-button" href="#" >
             <div class="button__wrap">
                 <div class="button__name">Начать расчет стоимости</div> 
                 <div class="button__wrap-img">
@@ -52,6 +55,35 @@
                 </div>
             </div>
         </a>
+        <div class="header__form form header__form--active js-form">
+            <div class="from__wrap">
+                <button type="button" aria-label="close" class="burger header__burger js-burger burger--active">
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                </button>
+                <div class="form__wrap-title">
+                    <div class="form__title">ЗАМЕР – БЕСПЛАТНО</div>
+                </div>
+                <div class="form__subtitle">Оставьте контактные данные и менеджер свяжется с Вами, чтобы согласовать дату и время выезда инженера</div>
+                <form>
+                    <div class="form__wrap-input">
+                        <div class="form__name">
+                            <input placeholder="имя" type="text" class="form__input">
+                        </div>
+                        <div class="form__box form__box--inline"> 
+                            <input placeholder="Введите телефон" type="tel" class="form__input">
+                            <div class="form__element element">
+                                <svg class="element__icon">
+                                    <use xlink:href="#phone"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" id="my-btn" class="btn btn-primary">Заказать звонок</button>
+                </form>
+            </div>
+        </div>
     </div>
 </header>
 <section class="reviews">
@@ -157,7 +189,7 @@
         </div>
         <div class="footer__bottom">
             <a href="#" class="footer__order">© 2022 Rerate. Все права защищены.</a>
-            <a href="#"class="footer__privacy">Конфиденциальность</a>
+            <a href="#" class="footer__privacy">Конфиденциальность</a>
             <a href="#" class="footer__conditions">
                 <span class="footer__circle"></span>
                 <div class="footer__condition">Условия использования</div>
@@ -165,18 +197,10 @@
         </div>
     </div>
 </footer>
-
-
-
-        <!-- подключаем jQuery -->
-        <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="https://code.jquery.com/jquery-migrate-3.3.2.min.js"></script> -->
-        <!-- подключаем slick -->
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
         <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <script  type="text/javascript" src="https://kenwheeler.github.io/slick/slick/slick.js"></script>
         <!-- подключаем js -->
         <script src="js/main.js"></script>
 </body>
-
 </html>

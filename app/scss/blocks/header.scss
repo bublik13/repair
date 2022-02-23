@@ -7,10 +7,9 @@
   flex-direction: column;
   align-items: center;
   min-width: 0;
+  position: relative;
   @include media($md) {
     padding-top: 16px;
-  }
-  @include media($lg) {
   }
 }
 .header__logo {
@@ -29,8 +28,6 @@
   margin-bottom: 30px;
   @include media($md) {
     margin-bottom: 20px;
-  }
-  @include media($lg) {
   }
 }
 .header__subtitle {
@@ -61,4 +58,32 @@
   @include media($lg) {
     margin-bottom: 40px;
   }
+}
+.header__form {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #81b3d2;
+  z-index: 2;
+  transition: transform 0.2s;
+  transform: translateX(-100%);
+  pointer-events: none;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  overflow-y: auto;
+}
+.header__form--active {
+  transform: translateX(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+.header__burger {
+  margin-left: auto;
+  z-index: 3;
+  position: relative;
+  position: absolute;
+  top: 16px;
+  right: 16px;
 }

@@ -1,11 +1,11 @@
 //bacgrounds
 $body-bg: #ffffff;
 
-
 //fonts
 $basic-family: "Roboto", "Arial", "Helvetica", sans-serif;
 $second-family: "IBM Plex Mono", monospace, "IBM Plex Sans", sans-serif;
 $plex-sans-family: "IBM Plex Sans", monospace, sans-serif;
+$circe-family: "CirceRegular","Roboto", "Arial", "Helvetica", sans-serif;
 
 //container
 $container-min-width: 320px;
@@ -22,6 +22,8 @@ $button-border-black: #000000;
 
 //media
 $xs: 350px;
+$xs-s:462px;
 $sm: 556px;
 $md: 768px;
+$ms: 954px;
 $lg: 1140px;

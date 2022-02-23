@@ -32,7 +32,7 @@
   transform: translateY(-20px);
 }
 .reviews__item:first-child {
-    margin-bottom: 34px;
+  margin-bottom: 34px;
   @include media($sm) {
     margin-right: 24px;
     margin-bottom: 0;
@@ -61,13 +61,9 @@
   border-radius: 50%;
   border: 1px solid #d6d6d6;
 }
-.reviews__wrap-text {
-}
 .reviews__name {
   @include font(18px, 23px, 600, $second-family);
   color: #0057ff;
-}
-.reviews__img-estimation {
 }
 .reviews__feedback {
   margin-bottom: 16px;
