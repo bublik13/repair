@@ -1,9 +1,12 @@
 .btn {
+  display: inline-block;
+  vertical-align: top;
   width: 100%;
-  background-color: #000;
-  color: #fff;
+  background-color: $btn-bg-black;
+  color: $btn-color-white;
   padding: 20px;
   border-radius: 16px;
   border: none;
   cursor: pointer;
+  @include font(16px, 24px, 400, $plex-sans-family);
 }

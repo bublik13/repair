@@ -1,5 +1,5 @@
 .reviews {
-  background: #f2f6ff;
+  background-color: $reviews-bg-pink;
 }
 .reviews__container {
   padding-top: 35px;
@@ -22,11 +22,11 @@
   }
 }
 .reviews__item {
-  background-color: #ffffff;
+  background-color: $reviews-bg-white;
   padding: 20px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px $reviews-color-black;
   transition: transform 0.5s;
-  cursor: pointer;
+  cursor: default;
 }
 .reviews__item:hover {
   transform: translateY(-20px);
@@ -59,11 +59,11 @@
   top: 0;
   left: 0;
   border-radius: 50%;
-  border: 1px solid #d6d6d6;
+  border: 1px solid $reviews-border-pink;
 }
 .reviews__name {
   @include font(18px, 23px, 600, $second-family);
-  color: #0057ff;
+  color: $reviews-color-blue;
 }
 .reviews__feedback {
   margin-bottom: 16px;
@@ -76,7 +76,7 @@
 .reviews__circle {
   width: 8px;
   height: 8px;
-  background-color: #f7a238;
+  background-color: $reviews-bg-orange;
   border-radius: 50%;
   margin-right: 8px;
 }
@@ -86,29 +86,25 @@
 .reviews__desc {
   max-width: 490px;
   @include font(14px, 18px, 400, $plex-sans-family);
-  color: #000;
+  color: $reviews-color-black;
 }
 .reviews__desc--font {
-  font-family: IBM Plex Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
+  color: $reviews-color-grey;
 }
 .reviews__wrap {
   margin-bottom: 10px;
 }
 .reviews__pluse {
   margin-right: 8px;
-  color: #14b910;
+  color: $reviews-color-green;
   @include font(20px, 30px, 700, $second-family);
 }
 .reviews__minus {
   margin-right: 8px;
-  color: #ff0000;
+  color: $reviews-color-red;
   @include font(20px, 30px, 700, $second-family);
 }
 .reviews__text {
   @include font(14px, 18px, 700, $second-family);
-  color: #333333;
+  color: $reviews-color-grey;
 }

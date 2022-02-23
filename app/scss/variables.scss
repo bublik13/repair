@@ -1,28 +1,57 @@
 //bacgrounds
 $body-bg: #ffffff;
+$header-bg-blue: #81b3d2;
+$btn-bg-black: #000000;
+$burger-bg-black: #000000;
+$button-bg-white: #ffffff;
+$footer-bg-dark: #232323;
+$footer-bg-grey:#bbbbbb;
+$form-bg-white: #ffffff;
+$form-bg-orange: #ffda1f;
+$reviews-bg-pink: #f2f6ff;
+$reviews-bg-white: #ffffff;
+$reviews-bg-orange: #f7a238;
+$slick-bg-white: #ffffff;
 
 //fonts
 $basic-family: "Roboto", "Arial", "Helvetica", sans-serif;
 $second-family: "IBM Plex Mono", monospace, "IBM Plex Sans", sans-serif;
 $plex-sans-family: "IBM Plex Sans", monospace, sans-serif;
-$circe-family: "CirceRegular","Roboto", "Arial", "Helvetica", sans-serif;
+$circe-family: "CirceRegular", "Roboto", "Arial", "Helvetica", sans-serif;
 
 //container
 $container-min-width: 320px;
 $container-max-width: 1140px;
 
 //color
+$header-color-black: #000000;
 $title-color-black: #000000;
 $subtitle-color-black: #000000;
 $logo-color: #0c1b66;
 $button-color-black: #000000;
+$btn-color-white: #ffffff;
+$element-color-black: #000000;
+$footer-color-white: #ffffff;
+$footer-color-grey: #878787;
+$form-color-black: #000000;
+$reviews-color-blue: #0057ff;
+$reviews-color-black: #000000;
+$reviews-color-grey: #333333;
+$reviews-color-red: #ff0000;
+$reviews-color-green: #14b910;
 
 //border
 $button-border-black: #000000;
+$form-border-grey: #232323;
+$form-border-black: #000000;
+$reviews-border-pink: #d6d6d6;
+
+// box-shadow
+$reviews-color-black: rgba(0, 0, 0, 0.25);
 
 //media
 $xs: 350px;
-$xs-s:462px;
+$xs-s: 462px;
 $sm: 556px;
 $md: 768px;
 $ms: 954px;

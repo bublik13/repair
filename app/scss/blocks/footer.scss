@@ -1,5 +1,5 @@
 .footer {
-  background-color: #232323;
+  background-color: $footer-bg-dark;
   position: relative;
 }
 .footer__container {
@@ -8,6 +8,7 @@
 .footer__top {
   display: flex;
   flex-direction: column;
+  cursor: default;
   @include media($sm) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -23,12 +24,12 @@
   }
 }
 .footer__title {
-  color: #fff;
+  color: $footer-color-white;
   @include font(14px, 18px, 400, $second-family);
   margin-bottom: 6px;
 }
 .footer__subtitle {
-  color: #878787;
+  color: $footer-color-grey;
   @include font(14px, 18px, 400, $second-family);
   @include media($sm) {
     max-width: 260px;
@@ -38,7 +39,7 @@
   content: " ";
   position: absolute;
   height: 1px;
-  background-color: #bbbbbb;
+  background-color: $footer-bg-grey;
   width: 100%;
   top: 0;
 }
@@ -46,31 +47,32 @@
   display: flex;
   position: relative;
   padding-top: 30px;
-  cursor: pointer;
   flex-wrap: wrap;
 }
 .footer__order {
-  color: #878787;
-  text-decoration: none;
+  cursor: default;
+  color: $footer-color-grey;
   @include font(14px, 20px, 400, $circe-family);
   @include media($xs-s) {
     margin-right: 57px;
   }
 }
 .footer__privacy {
-  color: #878787;
+  color: $footer-color-grey;
   @include font(14px, 20px, 400, $circe-family);
   text-decoration: none;
   margin-right: 15px;
+  cursor: pointer;
 }
 .footer__conditions {
   text-decoration: none;
   display: flex;
   align-items: center;
   max-width: 180px;
+  cursor: pointer;
 }
 .footer__circle {
-  background-color: #878787;
+  background-color: $footer-color-grey;
   height: 4px;
   width: 4px;
   text-decoration: none;
@@ -79,7 +81,7 @@
   margin-right: 8px;
 }
 .footer__condition {
-  color: #878787;
+  color: $footer-color-grey;
   text-decoration: none;
   @include font(14px, 20px, 400, $circe-family);
 }
